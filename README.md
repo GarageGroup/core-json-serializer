@@ -1,1 +1,1 @@
-# core-json
+# core-json-serializer
