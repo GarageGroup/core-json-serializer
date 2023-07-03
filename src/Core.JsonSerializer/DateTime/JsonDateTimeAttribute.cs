@@ -1,7 +1,7 @@
 using System;
 using System.Text.Json.Serialization;
 
-namespace GGroupp;
+namespace GarageGroup;
 
 [AttributeUsage(
     AttributeTargets.Class |

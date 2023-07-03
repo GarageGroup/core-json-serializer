@@ -2,7 +2,7 @@ using System;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 
-namespace GGroupp;
+namespace GarageGroup;
 
 public sealed class StringMaxLengthJsonConverter : JsonConverter<string?>
 {

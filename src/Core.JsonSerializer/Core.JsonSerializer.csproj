@@ -6,13 +6,13 @@
     <Nullable>enable</Nullable>
     <InvariantGlobalization>true</InvariantGlobalization>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
-    <RootNamespace>GGroupp</RootNamespace>
-    <AssemblyName>GGroupp.Core.JsonSerializer</AssemblyName>
+    <RootNamespace>GarageGroup</RootNamespace>
+    <AssemblyName>GarageGroup.Core.JsonSerializer</AssemblyName>
     <Version>0.0.1</Version>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="GGroupp.Core.String.Extensions" Version="1.0.0" />
+    <PackageReference Include="GarageGroup.Core.String.Extensions" Version="1.0.0" />
   </ItemGroup>
 
 </Project>
