@@ -11,14 +11,8 @@ namespace GarageGroup;
     AttributeTargets.Field |
     AttributeTargets.Interface,
     AllowMultiple = false)]
-public sealed class JsonDateTimeAttribute : JsonConverterAttribute
+public sealed class JsonDateTimeAttribute(string? format) : JsonConverterAttribute
 {
-    private readonly string? format;
-
-    public JsonDateTimeAttribute(string? format)
-        =>
-        this.format = format;
-
     public override JsonConverter? CreateConverter(Type typeToConvert)
         =>
         new DateTimeJsonConverter(format);

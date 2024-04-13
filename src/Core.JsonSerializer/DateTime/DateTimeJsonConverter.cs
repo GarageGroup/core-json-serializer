@@ -5,14 +5,8 @@ using System.Text.Json.Serialization;
 
 namespace GarageGroup;
 
-public sealed class DateTimeJsonConverter : JsonConverter<DateTime>
+public sealed class DateTimeJsonConverter(string? format) : JsonConverter<DateTime>
 {
-    private readonly string? format;
-
-    public DateTimeJsonConverter(string? format)
-        =>
-        this.format = format;
-
     public override void Write(Utf8JsonWriter writer, DateTime date, JsonSerializerOptions options)
     {
         var stringValue = string.IsNullOrEmpty(format) switch
